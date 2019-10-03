@@ -1,0 +1,45 @@
+
+Todo List
+<table>
+  <thead>
+      <tr>
+        <th>Todo</th>
+        <th>Delete</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let dataList of dataList">
+        <td>{{ dataList.food }}</td>
+        <td><button type="button" (click)=delete(dataList._id)>Delete</button></td>
+      </tr>
+      </tbody>
+</table>
+
+<form>
+  Item Todo: <input type='text' name='food' #food>
+
+
+
+<button type='button' name='food' (click)='addFood(food.value)'>Add Item</button> 
+</form>
+
+
+
+
+
+<!-- FoodList
+
+<ul>
+  <li *ngFor="let dataList of dataList">
+    {{ dataList.food }}
+  </li>
+</ul>
+
+<form>
+  Food: <input type='text' name='food' #food>
+
+
+
+<button type='button' name='food' (click)='addFood(food.value)'>Add Food</button> 
+<button type='button' (click)='test()'>Test</button> 
+</form> -->
