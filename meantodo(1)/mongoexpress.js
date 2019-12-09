@@ -6,7 +6,7 @@ const app = express();
 const ObjectId = require('mongodb').ObjectID;
 const _ = require('underscore')
 
-const CONNECTION_URL = 'mongodb+srv://admin:admin@cluster0-afp5w.mongodb.net/test?retryWrites=true&w=majority';
+const CONNECTION_URL = 'mongodb+srv://'username':'password'@cluster0-afp5w.mongodb.net/test?retryWrites=true&w=majority';
 
 //enter database name here
 const DATABASE_NAME = "database";
